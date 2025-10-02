@@ -20,7 +20,13 @@ Ans: The useState hook lets functional components in React manage internal state
 # Question 4 : How can you share state between components in React?
 
 Ans: 
+1.Lifting State Up: Best for closely related components (parent/child or siblings). Move shared state to their nearest common ancestor.
+
+2.React Context API: Ideal for app-wide or deeply nested state. Avoids prop drilling by providing state via a context provider.
+
+3.External State Libraries: Use tools like Redux or Zustand for complex apps with large-scale or deeply shared state needs.
 
 # Question 5 : How is event handling done in React?
 
 Ans: 
+Event handlers in React are passed as functions using camelCase syntax (e.g., onClick, onChange).
