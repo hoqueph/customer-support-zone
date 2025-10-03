@@ -1,11 +1,11 @@
-import { Suspense, useState } from 'react';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import './App.css';
-import Banner from './components/banner';
-import Footer from './components/footer';
-import Navbar from './components/navbar';
-import TicketSection from './components/ticketsection';
+import { Suspense, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
+import Banner from "./components/banner";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import TicketSection from "./components/ticketsection";
 
 const fetchCustomers = async () => {
   const res = await fetch("/data.json");
