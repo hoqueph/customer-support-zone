@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm md:px-6 ">
-        <div className="flex-1 ">
+      <div className="navbar bg-base-100 shadow-sm md:px-6">
+        <div className="flex-1">
           <a className="md:text-xl font-bold cursor-default select-none">
             CS — Ticket System
           </a>
@@ -33,8 +33,7 @@ const Navbar = () => {
           <button
             className="btn bg-gradient-to-r from-purple-600 to-indigo-800 text-white font-semibold ml-4
             hover:from-purple-700 hover:to-indigo-900
-            transition-colors duration-300
-          "
+            transition-colors duration-300"
           >
             + New Ticket
           </button>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 2027,
+    "title": "Login button unresponsive",
+    "description": "Users report that clicking the login button does nothing.",
+    "customer": "Charlotte Green",
+    "priority": "HIGH  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-24"
+  },
+  {
+    "id": 3045,
+    "title": "Order confirmation not received",
+    "description": "Customer did not get confirmation email after placing an order.",
+    "customer": "Ethan Hall",
+    "priority": "MEDIUM  PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-23"
+  },
+  {
+    "id": 5012,
+    "title": "Report download fails",
+    "description": "Excel report download stops midway and gives error.",
+    "customer": "Amelia Scott",
+    "priority": "HIGH  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-22"
+  },
+  {
+    "id": 7344,
+    "title": "App logout issue",
+    "description": "User stays logged in even after pressing the logout button.",
+    "customer": "Mia King",
+    "priority": "MEDIUM  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": 4451,
+    "title": "Profile picture not uploading",
+    "description": "Uploading new profile picture shows success but image does not change.",
+    "customer": "Benjamin Wright",
+    "priority": "LOW  PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": 6528,
+    "title": "Incorrect password reset email",
+    "description": "Password reset email sent to wrong address for some users.",
+    "customer": "Harper Lopez",
+    "priority": "HIGH  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": 3776,
+    "title": "Session timeout too short",
+    "description": "Users are logged out after only 2 minutes of inactivity.",
+    "customer": "Abigail Clark",
+    "priority": "MEDIUM  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-16"
+  },
+  {
+    "id": 8419,
+    "title": "Discount code not applying",
+    "description": "Promo codes entered at checkout are not reducing the price.",
+    "customer": "Lucas Rodriguez",
+    "priority": "HIGH  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 9123,
+    "title": "Search function slow",
+    "description": "Search results take too long to appear when querying large datasets.",
+    "customer": "Olivia Martinez",
+    "priority": "MEDIUM  PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2025-09-14"
+  },
+  {
+    "id": 9988,
+    "title": "Notifications not showing",
+    "description": "Users do not receive notifications for new messages.",
+    "customer": "Daniel Thompson",
+    "priority": "HIGH  PRIORITY",
+    "status": "Open",
+    "createdAt": "2025-09-13"
+  }
+]

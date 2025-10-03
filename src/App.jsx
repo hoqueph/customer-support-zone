@@ -1,42 +1,44 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Suspense, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import Footer from './components/footer'; 
+import Banner from './components/banner';
+import Footer from './components/footer';
 import Navbar from './components/navbar';
+import TicketSection from './components/ticketsection';
+
+const fetchCustomers = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
+
+const customersPromise = fetchCustomers();
 
 function App() {
   const [count, setCount] = useState(0);
+  const [selectedCustomers, setSelectedCustomers] = useState([]);
+  const [resolvedCustomers, setResolvedCustomers] = useState([]);
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
-       <Navbar /> {/* ✅ Now you're using the Navbar */}
-      <div className="p-4">
-        <div className="flex justify-center gap-4">
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
+    <>
+      <Navbar />
 
-        <h1 className="text-center text-2xl font-bold mt-4">Vite + React</h1>
-        <div className="card text-center mt-4">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs text-center mt-2">
-          Click on the Vite and React logos to learn more
-        </p>
-      </div>
+      <Banner count={count} resolvedCount={resolvedCustomers.length} />
 
-      <Footer/> 
-    </div>
+      <Suspense fallback="Loading...">
+        <TicketSection
+          coustomarsPromise={customersPromise}
+          setCount={setCount}
+          selectedCustomers={selectedCustomers}
+          setSelectedCustomers={setSelectedCustomers}
+          resolvedCustomers={resolvedCustomers}
+          setResolvedCustomers={setResolvedCustomers}
+        />
+      </Suspense>
+
+      <Footer />
+      <ToastContainer />
+    </>
   );
 }
 

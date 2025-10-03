@@ -1,5 +1,4 @@
 import React from "react";
-
 import Container from "./container";
 import Twitter from "../assets/twitter.png";
 import Linkedin from "../assets/linkedin.png";
@@ -74,7 +73,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="text-left md:text-center text-white text-lg mt-8">
+        <div className="text-left md:text-center text-white text-lg mt-2">
           © 2025 CS — Ticket System.
           <br className="block md:hidden" /> All rights reserved.
         </div>
